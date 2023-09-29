@@ -13,5 +13,5 @@ RUN npm install react-scripts -g
 RUN npm run build
 
 FROM nginx:1.17.8-alpine
-COPY nginx_default.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /usr/src/fooderio/build /usr/share/nginx/html
