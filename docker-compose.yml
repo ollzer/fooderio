@@ -14,7 +14,7 @@ services:
     environment:
       - YOLO=true
     restart: unless-stopped
-    command: ["npm start"]
+    command: ["nginx", "-g", "daemon off;"]
 
 networks:
   nginx_proxy:
