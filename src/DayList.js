@@ -131,7 +131,7 @@ export default function WeekList(props) {
 
         setMenu(MenuData)
         
-    }, [foodDataFi]);
+    }, [foodDataFi, foodDataSv]);
 
   return (
     <React.Fragment>{menu}</React.Fragment>
